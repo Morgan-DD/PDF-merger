@@ -1,5 +1,5 @@
 # A Simple PDF merger in command Line
-This projet is just an modification of the project of [Fernando Linhares](https://github.com/Fernando-Linhares), [the project](https://github.com/Fernando-Linhares/MergerPdf).  
+This projet is just an modification of the project of [Fernando Linhares](https://github.com/Fernando-Linhares), [MergerPdf](https://github.com/Fernando-Linhares/MergerPdf).  
 The program take all the pdf on all the folders on the base folder.
 ## Usage
 
