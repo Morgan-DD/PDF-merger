@@ -1,6 +1,6 @@
 # A Simple PDF merger in command Line
 This projet is just an modification of the project of [Fernando Linhares](https://github.com/Fernando-Linhares), [MergerPdf](https://github.com/Fernando-Linhares/MergerPdf).  
-The program take all the pdf on all the folders on the base folder.
+The programme will take all the PDFs on all the folders in the base folder..
 ## Usage
 
 `mergerpdf.exe` `Path\to\the\PDF\output.pdf` `Path\of\the\folder\where\is\the\PDFs`
