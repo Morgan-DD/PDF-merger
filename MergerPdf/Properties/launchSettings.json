@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "mergerpdf": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\pg66hua\\Desktop\\test-net0.7.pdf\r\nD:\\Morgan\\TCPDF-test\\testPDF_2024-25-03_11-09-00"
+    }
+  }
+}
