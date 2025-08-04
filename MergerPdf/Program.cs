@@ -10,14 +10,24 @@ public class Program
         {
             Console.WriteLine("début de la fusion des PDFs");
             string folderWithPdf = @"" + args[1];
-            string[] files = (Directory.GetFiles(folderWithPdf)).Concat(Directory.GetDirectories(folderWithPdf)).ToArray();
+            //string[] files = (Directory.GetFiles(folderWithPdf)).Concat(Directory.GetDirectories(folderWithPdf)).ToArray();
             var pdfs = new List<string>();
+
+            //1. Start by processing only folder, file process is after
+            string[] directories = Directory.GetDirectories(folderWithPdf).OrderBy(a => a).ToArray(); //Sort
+            foreach (string directory in directories)
+            {
+                pdfs = addPdfToList(directory, pdfs);
+            }
             //Console.WriteLine("\nfolderWithPdf: " + folderWithPdf + "\n");
+            
+            //2. Process file
+            string[] files = Directory.GetFiles(folderWithPdf, "*.pdf").OrderBy(a => a).ToArray(); //Sort
             foreach (string file in files)
             {
-                pdfs = addPdfToList(file, pdfs);
-
+                pdfs.Add(file);
             }
+
             //Console.WriteLine("\nFichier d'output: " + outputfile);
             var record = new PdfRecord(pdfs);
             
